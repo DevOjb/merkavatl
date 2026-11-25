@@ -1,0 +1,118 @@
+/* MERKAVA RESPONSIVE RULES — breakpoints, mobile layout, reduced motion and print. */
+/* Small-screen, motion and print overrides */
+@media (max-width: 600px) {
+  .fab span {
+    display: none;
+  }
+  .fab {
+    padding: 15px;
+  }
+  .sec {
+    padding: 60px 0;
+  }
+  .band {
+    padding: 32px;
+  }
+  .sc {
+    padding: 18px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+  .rv {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media print {
+  header,
+  footer,
+  .fab,
+  .np {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 601px) {
+  .hero .stats {
+    gap: 18px;
+  }
+  .hero .stats b {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .fc {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+}
+@media (max-width: 900px) {
+  .vis {
+    display: block;
+    min-height: 0;
+    height: 170px;
+  }
+  .vis .car2,
+  .vis .vc {
+    display: none;
+  }
+  .vis .car1 {
+    position: static;
+    display: block;
+    width: 72%;
+    margin: 0 auto;
+  }
+  .vis .glow {
+    inset: 0;
+  }
+}
+@media (max-width: 640px) {
+  .fc {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .stats b {
+    font-size: 14px;
+  }
+  .mt {
+    width: 100%;
+  }
+  .mt button {
+    flex: 1;
+    padding: 9px 6px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 600px) {
+  .w { padding-left: 16px; padding-right: 16px; }
+  .hero { padding: 48px 0 92px; }
+  .hero h1 { font-size: clamp(34px, 11vw, 48px); }
+  .hero p { font-size: 16px; }
+  .hero .cta { display: grid; grid-template-columns: 1fr 1fr; }
+  .hero .cta .text-cta { grid-column: 1 / -1; justify-content: center; }
+  .hero .btn { width: 100%; }
+  .sc { margin-top: -56px; border-radius: 18px; padding: 16px; }
+  .sc .fg { grid-template-columns: 1fr; }
+  .sc .fg .btn { width: 100%; }
+  .mt button { min-height: 42px; }
+  .stats { margin-top: 28px; }
+  .stats b { font-size: 13px; }
+  .stats > div { min-width: 0; }
+  .dep { align-items: flex-start; }
+  .dep img { width: 96px; height: 64px; }
+  .dep-a { width: 100%; justify-content: space-between; }
+  .dep-a .btn { flex: 1; }
+  .bus { grid-template-columns: repeat(3, minmax(44px, 1fr)); gap: 8px; padding: 18px 12px; }
+  .seat { height: 46px; }
+}

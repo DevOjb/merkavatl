@@ -1,0 +1,35 @@
+/* MERKAVA DESIGN TOKENS — light-first brand system with explicit dark mode. */
+:root {
+  --b: #00afef;
+  --bd: #0079ae;
+  --bg: #f8fbfd;
+  --s: #eef7fb;
+  --t: #0b1a24;
+  --m: #566a77;
+  --l: #d7e5ed;
+  --ok: #15803d;
+  --er: #dc2626;
+  --ink: #06131c;
+  --sh: 0 18px 50px -18px #0a2a3c33;
+  --hero-bg: #f1f9fd;
+  --hero-text: #0b1a24;
+  --hero-muted: #536b79;
+  --hero-card: #ffffffcc;
+  --hero-border: #0079ae2e;
+  --hero-glow: #00afef2e;
+}
+:root[data-theme="dark"] {
+  --bg: #0a1218;
+  --s: #0f1b25;
+  --t: #eaf3f9;
+  --m: #9bb0bd;
+  --l: #1f3342;
+  --bd: #35c0f5;
+  --sh: 0 18px 50px -18px #000a;
+  --hero-bg: #06131c;
+  --hero-text: #ffffff;
+  --hero-muted: #b9cfdb;
+  --hero-card: #ffffff12;
+  --hero-border: #ffffff2e;
+  --hero-glow: #00afef55;
+}
